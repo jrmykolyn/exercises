@@ -1,12 +1,31 @@
+// --------------------------------------------------
+// NOTES
+// --------------------------------------------------
+// This file contains all the tests for the Deck class that you're about to write!
+// The test cases are split up into the following groups:
+//   - 'General'
+//   - 'Instance properties'
+//   - 'Instance methods'
+// Take a moment to read through each of the test case descriptions.
+// Once you understand the requirements for each case, hop over to the `src/deck.js` and start implementing your solutions.
+
+// --------------------------------------------------
+// IMPORT MODULES
+// --------------------------------------------------
 const Deck = require('../src/deck');
 
+// --------------------------------------------------
+// DEFINE TESTS
+// --------------------------------------------------
 describe('Deck', () => {
   describe('General', () => {
+    // Since the `src/deck.js` file exports the Deck class, this test will pass. Hooray!
     it('should be constructable', () => {
       expect(new Deck()).toBeInstanceOf(Deck);
     });
   });
 
+  // The tests below ensure that all of the instance properties are present, and work as expected.
   describe('Instance properties', () => {
     describe('cards', () => {
       it('should be an array', () => {
@@ -41,6 +60,7 @@ describe('Deck', () => {
     });
   });
 
+  // These tests make assertions about the functionality of each deck instance.
   describe('Instance methods', () => {
     describe('shuffle()', () => {
       it('should be a function', () => {
