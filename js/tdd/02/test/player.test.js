@@ -27,6 +27,16 @@ describe('Player', () => {
         expect((new Player()).hand.length).toBe(0);
       });
     });
+
+    describe('isPlaying', () => {
+      it('should be a boolean', () => {
+        expect(typeof (new Player()).isPlaying === 'boolean').toBe(true);
+      });
+
+      it('should be true', () => {
+        expect((new Player()).isPlaying).toBe(true);
+      });
+    });
   });
 
   describe('Instance methods', () => {
