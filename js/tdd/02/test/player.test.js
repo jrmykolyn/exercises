@@ -17,6 +17,16 @@ describe('Player', () => {
         expect((new Player()).chips > 0).toBe(true);
       });
     });
+
+    describe('hand', () => {
+      it('should be an array', () => {
+        expect(Array.isArray((new Player()).hand)).toBe(true)
+      });
+
+      it('should have a length of 0', () => {
+        expect((new Player()).hand.length).toBe(0);
+      });
+    });
   });
 
   describe('Instance methods', () => {
