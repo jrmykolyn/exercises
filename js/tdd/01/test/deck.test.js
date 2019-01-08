@@ -104,6 +104,18 @@ describe('Deck', () => {
 
         expect(typeof deck.draw).toBe('function');
       });
+
+      it('should return null if invoked with a non-number', () => {
+        const deck = new Deck();
+
+        expect(deck.draw('')).toBe(null);
+        expect(deck.draw('Hello, world!')).toBe(null);
+        expect(deck.draw(true)).toBe(null);
+        expect(deck.draw(false)).toBe(null);
+        expect(deck.draw({})).toBe(null);
+        expect(deck.draw([])).toBe(null);
+      });
+
       it('should return the "top" card when invoked with 0 arguments', () => {
         const deck = new Deck();
         deck.cards = [1,2,3];
@@ -139,17 +151,6 @@ describe('Deck', () => {
         const card = deck.draw();
 
         expect(card).toBe(-1);
-      });
-
-      it('should return null if invoked with a non-number', () => {
-        const deck = new Deck();
-
-        expect(deck.draw('')).toBe(null);
-        expect(deck.draw('Hello, world!')).toBe(null);
-        expect(deck.draw(true)).toBe(null);
-        expect(deck.draw(false)).toBe(null);
-        expect(deck.draw({})).toBe(null);
-        expect(deck.draw([])).toBe(null);
       });
     });
   });
