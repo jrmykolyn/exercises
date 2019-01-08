@@ -40,6 +40,18 @@ describe('Player', () => {
   });
 
   describe('Instance methods', () => {
+    describe('draw()', () => {
+      it('it should add a number the Player\'s hand', () => {});
+    });
 
+    describe('call()', () => {
+      it('...', () => {});
+    });
+
+    describe('bet()', () => {});
+
+    describe('raise()', () => {});
+
+    describe('fold()', () => {});
   });
 });
