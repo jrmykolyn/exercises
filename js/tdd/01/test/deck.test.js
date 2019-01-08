@@ -125,7 +125,7 @@ describe('Deck', () => {
         expect(card).toBe(3);
       });
 
-      it('should return the "top" 2 cards when invoked with the number 2', () => {
+      it('should return an array containing the "top" 2 cards when invoked with the number 2', () => {
         const deck = new Deck();
         deck.cards = [1,2,3];
 
