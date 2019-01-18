@@ -1,3 +1,6 @@
 [submodule "js/tdd/01"]
 	path = js/tdd/01
 	url = git@github.com:jrmykolyn/exercises.js.tdd.01.git
+[submodule "js/tdd/02"]
+	path = js/tdd/02
+	url = git@github.com:jrmykolyn/exercises.js.tdd.02.git
